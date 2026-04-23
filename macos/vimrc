@@ -1,7 +1,13 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => General 
+" => Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+call plug#begin('~/.vim/plugged')
+Plug 'sjl/badwolf'              " badwolf colorscheme
+call plug#end()
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => General
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Sets how many lines of history VIM has to remember
 set history=1000
 
@@ -16,7 +22,7 @@ filetype indent on
 set ruler
 
 " Draw horizontal highlight/underline on the line your cursor is currently on
-set cursorline  
+set cursorline
 
 " Height of the command bar
 set cmdheight=2
@@ -27,6 +33,9 @@ set whichwrap+=<,>h,l
 
 " Ignore case when searching
 set ignorecase
+
+" If you type ANY uppercase, search becomes case-sensitive
+set smartcase
 
 " Highlight search results
 set hlsearch
@@ -72,5 +81,4 @@ set smarttab
 
 " 1 tab == 2 spaces
 set shiftwidth=2
-set tabstop=4
-
+set tabstop=2
